@@ -5,6 +5,7 @@ import Courses from './components/Courses.jsx';
 import Teacher from './components/Teacher.jsx';
 import Footer from './components/Footer.jsx';
 import ImageSlider from './components/ImageSlider.jsx';
+import SliderComponent from './components/SliderComponent.jsx';
 
 
 
@@ -14,10 +15,11 @@ const App = () => {
 
       <NavBar />
       <ImageSlider />
+      <SliderComponent />
       <About />
       <Courses />
       <Teacher />
-
+   
 
       <Footer />
 

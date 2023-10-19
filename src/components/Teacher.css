@@ -14,9 +14,9 @@
       border-radius: 5px; 
       margin-left: 20px;
       margin-top: 1px;
-      width: 200px;
       background-color: #4985BC;
-  
+    align-items: center;
+    padding-left: -300px;
     }
     
     .card1:hover {
@@ -26,23 +26,31 @@
 
 
     .imgs{
-        width:200px;
-        height:200px;
-        border-radius: 5px 5px 0 0;
-
+        width:250px;
+        height:150px;
+        border-radius: 5px ;
+        align-items: center;
       }
 
-  .coursetit {
+  .teachdet {
       display: flex;
       flex-direction: row;
       align-items: center;
       padding-top: 10px;
+
   }
-    .container {
-      padding: 2px 16px;
+    .container1 {
+      display: flex;
+      flex-direction: column;
+justify-content: center;
+align-items: center;
     }
   
   .des {
       font-size: small;
   }
     
+  .svgs1{
+    width:15px;
+    height:15px;
+  }
