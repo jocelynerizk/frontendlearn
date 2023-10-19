@@ -1,6 +1,8 @@
 import React from 'react';
 import Slider from 'react-slick';
-import './ImageSlider.css'; // Importez le fichier CSS
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import './ImageSlider.css'; 
 import '../images/image1.jpg';
 import '../images/image2.jpg';
 import '../images/image3.jpg';

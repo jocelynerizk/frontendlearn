@@ -3,6 +3,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  align-items: center;
   padding-left: 5px;
   width: 1200px;
   align-items: center;
@@ -16,8 +17,8 @@
     margin-top: 20px;
     width: 200px;
     background-color: #4985BC;
-
- 
+    height: 250px;
+  
   }
   
   .card:hover {
