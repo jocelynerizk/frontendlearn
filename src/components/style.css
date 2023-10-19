@@ -1,0 +1,30 @@
+.line-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+  }
+.title {
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 100px;
+    color: #64CCC5;
+  }
+  
+  .line {
+    width: 150px;
+    align-items: center;
+    border-color: #369;
+  } 
+  .linevert {
+    width: 200px;
+    align-items: center;
+    border-color: aqua;
+  } 
+  .svgs{
+    width:25px;
+    height:25px;
+    margin-right: 15px;
+  }
