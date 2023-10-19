@@ -54,8 +54,14 @@ const Teacher = () => {
             <p clname="dess"><b>{course.title}</b></p>
             <img src={course.svge} alt={course.title} className="svgs" />
             </div>
+
           </div>
+
         ))}
+      </div>
+      <h1 className="title">CONTACT US</h1>
+      <div className="line-div">
+        <hr className="line" />
       </div>
     </div>
   );
