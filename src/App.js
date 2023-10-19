@@ -5,9 +5,9 @@ import Courses from './components/Courses.jsx';
 import Teacher from './components/Teacher.jsx';
 import Footer from './components/Footer.jsx';
 import ImageSlider from './components/ImageSlider.jsx';
-import SliderComponent from './components/SliderComponent.jsx';
-
-
+import Contact from './components/Contact.jsx';
+import MyLocationLink from './components/mylocation.jsx';
+import TestimonialSlider from './components/TestimonialSlider.jsx';
 
 const App = () => {
   return (
@@ -15,12 +15,13 @@ const App = () => {
 
       <NavBar />
       <ImageSlider />
-      <SliderComponent />
       <About />
       <Courses />
-      <Teacher />
-   
+  
 
+      <Teacher />
+      <Contact />
+ <MyLocationLink />
       <Footer />
 
    

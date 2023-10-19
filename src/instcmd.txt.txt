@@ -1,7 +1,5 @@
 npm install react-router-dom
 npm install react-icons
-BSAFE peut être complété en une heure et est accessible sur appareil mobile. Les utilisateurs pourront y accéder via ordinateurs, tablettes et téléphones intelligents, sans nécessiter l'utilisation de modules supplémentaires. Il est accessible aux personnes ayant divers types de déficiences.
-Les utilisateurs pourront y accéder via ordinateurs, tablettes et téléphones intelligents, sans nécessiter 
-l'utilisation de modules supplémentaires
-'utilisation de modules supplémentaires.
- Il est accessible aux personnes ayant divers types de déficiences.
+npm install -g yarn
+npm install @emailjs/browser
+

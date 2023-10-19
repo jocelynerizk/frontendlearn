@@ -41,17 +41,17 @@ const Teacher = () => {
       <div className="line-div">
         <hr className="line" />
       </div>
-      <div className="topcard">
+      <div className="topcard1">
         {coursesData.map((course, index) => (
           <div className="card1" key={index}>
             <div className="teachdet">
-              <img src={course.image} alt={course.title} className="imgs" />
+            <img src={course.image} alt={course.title} className="imgs1" />
             </div>
             <div className="line-div">
               <hr className="linevert" />
             </div>
             <div className="container1">
-            <h4 clname="dess"><b>{course.title}</b></h4>
+            <p clname="dess"><b>{course.title}</b></p>
             <img src={course.svge} alt={course.title} className="svgs" />
             </div>
           </div>

@@ -3,12 +3,14 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './ImageSlider.css'; 
-import '../images/image1.jpg';
-import '../images/image2.jpg';
-import '../images/image3.jpg';
+
+import teacher1 from "../images/teacher1.jpeg";
+import teacher2 from "../images/teacher2.jpeg";
+import teacher3 from "../images/teacher3.jpeg";
+import teacher4 from "../images/teacher4.jpeg";
 
 const images = [
-  '../images/image1.jpg',
+  '../images/teacher1.jpg',
   '../images/image2.jpg',
   '../images/image3.jpg',
   // Ajoutez ici les chemins de vos images

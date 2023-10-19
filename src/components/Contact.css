@@ -1,0 +1,60 @@
+/*CONTACT CSS
+.contactmain {
+  padding-top: 5%;
+  width: 200px;
+  background-color: #369;
+  height: 250px;
+  margin-top: 100px
+
+}*/
+
+.contactmain1 {
+  display: flex;
+  flex-direction: column;
+  background-color: #369;
+  gap: 15px;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  background-color: #369;
+  height: 250px;
+
+}
+
+
+.line-input {
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  border-bottom: 2px solid#68E0CF;
+  color: white;
+  font-size: 18px;
+}
+.subc {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  border: 2px solid #68E0CF;
+  padding: 5px;
+  margin: 10px;
+  width: 180px;
+  height: 220px;
+
+}
+
+
+ .send1 {
+  color: white;
+  background: #68E0CF;
+  border-radius: 20px;
+  padding: 15px;
+  width: 70%;
+  font-size: 17px;
+  border: 0;
+ }
+
+
