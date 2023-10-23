@@ -1,9 +1,15 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import gmail from "../Svgs/mail1.svg";
-
+import locationbeirut from "../images/locationbeirut.jpeg";
+import call from "../Svgs/call-white.svg";
+import email from "../Svgs/email-white.svg";
+import linkedin from"../Svgs/linkedin-white.svg"
 
 import './Contact.css';
+
+const latitude = 33.9132446;
+const longitude = 35.5938398;
+
 const Contact = () => {
     const form = useRef();
   
@@ -20,9 +26,18 @@ const Contact = () => {
 
   return (
 
-  <div className="contactmain" id="contact">
- 
+<div>
+<div className="titre">
+         <h1 className="title">Contact us</h1>
+      <div className="line-div">
+        <hr className="line" />
+      </div>
+ </div>
+
+
   <div className="subc">
+ 
+
     <div className="contactmain1">
     <form ref={form} onSubmit={sendEmail} className="contactmain1">
       <input
@@ -54,11 +69,42 @@ const Contact = () => {
       </form>
     </div>
 
-  </div>
+    <div className="contactmain1">
+    <img src={locationbeirut}  className="mymap" />
+    <a
+      href={`https://gps-coordinates.org/my-location.php?lat=${latitude}&lng=${longitude}`}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      ({latitude}, {longitude})
+    </a>
+
+    </div>
+    <div className="contactmain1">
+          <div className="info info1">
+                <img src={email} className="svgs" />
+                <a href="mailto:dev.jocelyne.rizk@isae.edu.lb" className="get-in-info">
+                jocelyne.rizk@isae.edu.lb
+                </a>
+              </div>
+              <div className="info info1">
+                <img src={call} className="svgs" />
+                <h4 > +961 03 577 105</h4>
+              </div>
+
+            <div className="info info1">
+                <img src={linkedin} className="svgs" />
+                <p className="get-in-info"> linkidadre</p>
+            </div>
+              
+    </div>
+    </div>
+
+
+
+
 
 </div>
-
-
     
   );
 };

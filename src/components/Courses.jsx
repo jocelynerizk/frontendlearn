@@ -1,5 +1,4 @@
 import React from 'react';
-import './style.css';
 import './Courses.css';
 
 import css1 from "../Svgs/css1.svg";
@@ -41,10 +40,14 @@ const coursesData = [
 const Courses = () => {
   return (
     <div>
-      <h1 className="title">Courses</h1>
+         <div className="titre">
+         <h1 className="title">Courses</h1>
       <div className="line-div">
         <hr className="line" />
       </div>
+         </div>
+
+      
       <div className="topcard">
         {coursesData.map((course, index) => (
           <div className="card" key={index}>

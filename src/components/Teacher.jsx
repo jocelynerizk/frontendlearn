@@ -1,5 +1,4 @@
 import React from 'react';
-import './style.css';
 import './Teacher.css';
 
 import teacher1 from "../images/teacher1.jpeg";
@@ -37,10 +36,12 @@ const coursesData = [
 const Teacher = () => {
   return (
     <div>
-      <h1 className="title">Teachers</h1>
+         <div className="titre">
+         <h1 className="title">Instructors</h1>
       <div className="line-div">
         <hr className="line" />
       </div>
+         </div>
       <div className="topcard1">
         {coursesData.map((course, index) => (
           <div className="card1" key={index}>
@@ -51,7 +52,7 @@ const Teacher = () => {
               <hr className="linevert" />
             </div>
             <div className="container1">
-            <p clname="dess"><b>{course.title}</b></p>
+            <p clname="dess">{course.title}</p>
             <img src={course.svge} alt={course.title} className="svgs" />
             </div>
 
@@ -59,10 +60,7 @@ const Teacher = () => {
 
         ))}
       </div>
-      <h1 className="title">CONTACT US</h1>
-      <div className="line-div">
-        <hr className="line" />
-      </div>
+ 
     </div>
   );
 };

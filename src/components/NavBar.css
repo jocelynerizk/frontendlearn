@@ -1,10 +1,9 @@
 .head-section-1 {
     display: flex;
     flex-direction: row;
-    height: 75px;
-    background-color: white;
-    border-color: aqua;
     justify-content:center; 
+    align-items: center;
+    padding-left: 5%;
 
   }
   .elearn {
@@ -21,8 +20,6 @@
     font-family: "Kanit", sans-serif;
     font-weight: bold;
     font-size: 16px;
-    padding-top: 10%;
-    text-align: right;
 
     
   }
@@ -36,15 +33,17 @@
     font-size: 16px;
     cursor: pointer;
     border-radius: 120px;
-    width: 100px;
+    width: 90px;
     height: 40px;
+    
   }
   .signup:hover {
     color: white;
   }
 
 .header1 {
-    position: fixed !important;
+    margin-top: 4%;
+    /*position: fixed !important;*/
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -70,7 +69,7 @@
 .nav-btn{
     background-color: transparent;
     border: none;
-    padding: 150px;
+    padding: 100px;
     outline: none;
     visibility: hidden;
     opacity: 0;

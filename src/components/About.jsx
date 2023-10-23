@@ -4,7 +4,7 @@ import './About.css'; // Assurez-vous d'importer votre fichier CSS s'il contient
 
 const About = () => {
     return (
-        <div>
+        <div className="myabout">
             <h1 className="title">About Us</h1>
             <div className="line-div">
             <hr className="line" />

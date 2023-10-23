@@ -26,9 +26,9 @@ const NavBar = () => {
         </button>
       </nav>
 
-      <div className="head-section-1">
-    <div><h3 className="signin">Log In</h3></div>
-    <div><button className="signup" onClick={() => window.open('signup.html')}>Sign UP</button></div>
+   <div className="head-section-1">
+    <h3 className="signin">Log In</h3>
+    <button className="signup" onClick={() => window.open('signup.html')}>Sign UP</button>
     </div>
 
     </div>

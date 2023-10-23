@@ -3,35 +3,37 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import './HeroSection.css'; // Assurez-vous d'avoir votre fichier CSS pour le style
+import './Herosection.css'; // Assurez-vous d'avoir votre fichier CSS pour le style
 
 const images = [
-  require('./images/image1.jpg'),
-  require('./images/image2.jpg'),
-  require('./images/image3.jpg'),
-  require('./images/image4.jpg'),
+  require('../images/hero1.jpg'),
+  require('../images/hero2.jpg'),
+  require('../images/hero3.jpg'),
 ];
 
 const HeroSection = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 800,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
   };
 
   return (
-    <div className="hero-section">
+    <div>
+    <div className="mycaro">
       <Slider {...settings}>
         {images.map((image, index) => (
           <div key={index}>
-            <img src={image} alt={`slide ${index + 1}`} />
+            <img className="monim" src={image} alt={`slide ${index + 1}`} />
+            <div><button className="centered-button" onClick={() => window.open('signup.html')}>Sign UP</button></div>
           </div>
         ))}
       </Slider>
+      </div>
     </div>
   );
 };
