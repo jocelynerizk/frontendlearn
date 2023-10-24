@@ -31,6 +31,11 @@ const coursesData = [
     image: teacher4,
     svge : svg4,
   },
+  {
+    title: 'Teacher1Name',
+    image: teacher1,
+    svge : svg1,
+  },
 ];
 
 const Teacher = () => {

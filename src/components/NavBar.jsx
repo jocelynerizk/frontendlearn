@@ -16,9 +16,9 @@ const NavBar = () => {
         <FaBars className="Fabars" />
       </button>
       <nav  className="header-nav"ref={navRef}>
-      <a className="header-a"  href="/#about">About </a>
-      <a className="header-a"  href="/#courses">Courses</a>
-      <a className="header-a"  href="/#teachers">Teachers</a>
+      <a className="header-a"  href="/#About">About </a>
+      <a className="header-a"  href="/#Courses">Courses</a>
+      <a className="header-a"  href="/#Teachers">Teachers</a>
       <a className="header-a" href="/#TestimonialSection">Testimonials</a>
       <a className="header-a"  href="/#Contactus">Contact Us</a>
         <button className="nav-btn1 nav-close-btn" onClick={showNavBar}>
@@ -27,8 +27,12 @@ const NavBar = () => {
       </nav>
 
    <div className="head-section-1">
-    <h3 className="signin">Log In</h3>
+      <div>
+      <h3 className="signin">Log In</h3>
+      </div>
+    <div>
     <button className="signup" onClick={() => window.open('signup.html')}>Sign UP</button>
+    </div>
     </div>
 
     </div>

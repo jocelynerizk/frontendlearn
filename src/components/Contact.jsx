@@ -26,7 +26,7 @@ const Contact = () => {
 
   return (
 
-<div>
+<div className="bigcont">
 <div className="titre">
          <h1 className="title">Contact us</h1>
       <div className="line-div">
@@ -64,7 +64,6 @@ const Contact = () => {
         span="" name="message"
         style={{ color: "#ffffff", fontSize: 18 }}
       />
-
       <input type="submit" value="Send message" className="send1" style={{ color: "aliceblue" }}/>
       </form>
     </div>

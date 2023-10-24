@@ -35,6 +35,13 @@ const coursesData = [
     startDate: 'Date de début',
     endDate: 'Date de fin',
   },
+  {
+    title: 'CSS',
+    image: css1,
+    description: 'Description du cours CSS',
+    startDate: 'Date de début',
+    endDate: 'Date de fin',
+  },
 ];
 
 const Courses = () => {

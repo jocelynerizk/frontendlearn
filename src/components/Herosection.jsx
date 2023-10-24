@@ -29,7 +29,6 @@ const HeroSection = () => {
         {images.map((image, index) => (
           <div key={index}>
             <img className="monim" src={image} alt={`slide ${index + 1}`} />
-            <div><button className="centered-button" onClick={() => window.open('signup.html')}>Sign UP</button></div>
           </div>
         ))}
       </Slider>
