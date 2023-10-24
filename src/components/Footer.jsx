@@ -43,6 +43,9 @@ const Footer = () => {
             <p className="footer-titles"> Social Links</p>
             <div className="social-container">
             <img src={email} className="svgs s1 " />
+            <a href="mailto:dev.jocelyne.rizk@isae.edu.lb" className="get-in-info">
+                jocelyne.rizk@isae.edu.lb
+                </a>
             <img src={linkedin} className="svgs foot-svg" />
             </div>
             

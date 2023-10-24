@@ -7,6 +7,7 @@ import Teacher from './components/Teacher.jsx';
 import Footer from './components/Footer.jsx';
 import Contact from './components/Contact.jsx';
 import TestimonialSlider from './components/TestimonialSlider.jsx';
+import Testimonialnew from './components/Testimonialnew.jsx';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
       <Courses />
       <Teacher />
       <Contact />
+      <Testimonialnew />
 
       <Footer />
 

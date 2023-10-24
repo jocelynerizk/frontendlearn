@@ -23,7 +23,7 @@ const HeroSection = () => {
   };
 
   return (
-    <div>
+    <div className="mycarobig">
     <div className="mycaro">
       <Slider {...settings}>
         {images.map((image, index) => (
@@ -34,7 +34,8 @@ const HeroSection = () => {
         ))}
       </Slider>
       </div>
-    </div>
+      </div>
+
   );
 };
 

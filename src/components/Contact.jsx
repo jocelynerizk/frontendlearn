@@ -70,6 +70,15 @@ const Contact = () => {
     </div>
 
     <div className="contactmain1">
+    <div className="google-map-container">
+      <iframe
+        title="Google Map"
+        className="gmap_iframe"
+        src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=University%20of%20Oxford&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+
+        
+      />
+    </div>
     <img src={locationbeirut}  className="mymap" />
     <a
       href={`https://gps-coordinates.org/my-location.php?lat=${latitude}&lng=${longitude}`}
