@@ -1,23 +1,35 @@
-.line-div{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content:center;
-  }
 
-  
+.grandtitre{
+  display :flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: #64CCC5;
+}
   .line {
-    width: 150px;
+    width: 15%;
     align-items: center;
     border-color: #369;
   } 
-  .linevert {
-    width: 200px;
-    align-items: center;
-    border-color: aqua;
-  } 
-  .svgs{
-    width:25px;
-    height:25px;
-    margin-right: 15px;
+
+  @media only screen and (max-width: 600px)  {
+    .grandtitre{
+      margin-top :5%;
+      margin-bottom : 5%;
+    }
+    .line {
+      width: 40%;
+    } 
+
+      
   }
+ 

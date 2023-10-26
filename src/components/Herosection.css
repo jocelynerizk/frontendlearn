@@ -1,14 +1,6 @@
-.mycarobig {
-  width: 160%;
-display: flex;
-height: 50%;
-flex-direction: column;
-align-content: center;
-align-items: center;
 
-  }
 .mycaro {
-  width: 100%;
+  width: 180%;
   background: no-repeat center center scroll;
   background-size: cover;
  align-items: center;
@@ -17,10 +9,6 @@ align-items: center;
   padding-top: 40px; /* Ajustez le padding-top en conséquence */
   background-position: center center;
   height: 50%;
-  opacity: 1;
-  visibility: inherit;
-  z-index: 10;
-
   }
 
 
@@ -34,6 +22,7 @@ align-items: center;
     width: 50%;
     object-fit: cover; 
     align-items: center;
+    height : 350px;
   }
 
   .slider-button {
@@ -42,21 +31,7 @@ align-items: center;
     left: 150%;
     transform: translate(-50%, -50%);
   }
-  .centered-button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #6CC4C5;
-    color: #369;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 120px;
-    width: 150px;
-    height: 60px;
 
-  }
   
 
 
@@ -89,5 +64,15 @@ align-items: center;
 }
 
 .slick-dots li.slick-active button {
-  background-color: #333; /* Couleur du point actif */
+  background-color: #17093a; /* Couleur du point actif */
+}
+@media only screen and (max-width: 600px) {
+  .mycaro {
+    width: 100%;
+    margin-left: 10%;
+    }
+    /* Styles for the dots (pagination) */
+.slick-dots {
+  left: 40%;
+}
 }

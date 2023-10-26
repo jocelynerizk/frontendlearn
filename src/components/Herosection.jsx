@@ -6,9 +6,9 @@ import 'slick-carousel/slick/slick-theme.css';
 import './Herosection.css'; // Assurez-vous d'avoir votre fichier CSS pour le style
 
 const images = [
-  require('../images/hero1.jpg'),
-  require('../images/hero2.jpg'),
-  require('../images/hero3.jpg'),
+  require('../images/hero1.jpeg'),
+  require('../images/hero2.jpeg'),
+  require('../images/hero3.jpeg'),
 ];
 
 const HeroSection = () => {
@@ -23,7 +23,7 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="mycarobig">
+
     <div className="mycaro">
       <Slider {...settings}>
         {images.map((image, index) => (
@@ -33,7 +33,7 @@ const HeroSection = () => {
         ))}
       </Slider>
       </div>
-      </div>
+
 
   );
 };

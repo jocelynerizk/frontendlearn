@@ -1,44 +1,8 @@
-.myabout {
-  margin-top: 5%;
-}
-.title {
-  font-size: 25px;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-align: center;
-  color: #64CCC5;
-}
+
   .grey {
     color: #369;
     text-align: center;
     font-size: larger;
 
   }
-  .line-div{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content:center;
-  }
-
-  
-  .line {
-    width: 150px;
-    align-items: center;
-    border-color: #369;
-  } 
-  .linevert {
-    width: 200px;
-    align-items: center;
-    border-color: aqua;
-  } 
-  @media only screen and (max-width: 600px)  {
-
-    
-      . grandtitre{
-        margin-top: 2cm;
-      }
-    
-      
-
-    }
+ 

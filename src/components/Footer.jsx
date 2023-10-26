@@ -34,7 +34,7 @@ const Footer = () => {
                     <li className="information-li"><a href="#Home">Home </a></li>
                     <li className="information-li"><a href="#About">About</a></li>
                     <li className="information-li"><a href="#Contact">Contact Us</a></li>
-                    <li className="information-li"><a href="#Contact">Courses</a></li>
+                    <li className="information-li"><a href="#Co">Courses</a></li>
                 </ul>
             </div>
             
@@ -46,7 +46,12 @@ const Footer = () => {
             <a href="mailto:dev.jocelyne.rizk@isae.edu.lb" className="get-in-info">
                 jocelyne.rizk@isae.edu.lb
                 </a>
+                </div>
+                <div className="social-container">
             <img src={linkedin} className="svgs foot-svg" />
+            <a href="mailto:dev.jocelyne.rizk@isae.edu.lb" className="get-in-info">
+                jocelyne.rizk@isae.edu.lb
+                </a>
             </div>
             
 

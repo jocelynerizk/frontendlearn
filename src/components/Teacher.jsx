@@ -40,13 +40,7 @@ const coursesData = [
 
 const Teacher = () => {
   return (
-    <div>
-         <div className="titre">
-         <h1 className="title">Instructors</h1>
-      <div className="line-div">
-        <hr className="line" />
-      </div>
-         </div>
+
       <div className="topcard1">
         {coursesData.map((course, index) => (
           <div className="card1" key={index}>
@@ -66,7 +60,7 @@ const Teacher = () => {
         ))}
       </div>
  
-    </div>
+
   );
 };
 

@@ -1,35 +1,3 @@
-.titre{
-  margin-top: 5%;
-}
-
-.titRE {
-  font-size: 25px;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-align: center;
-  color: #64CCC5;
-}
-
-  .line-div{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content:center;
-  }
-
-  
-  .line {
-    width: 150px;
-    align-items: center;
-    border-color: #369;
-  } 
-  .linevert {
-    width: 200px;
-    align-items: center;
-    border-color: aqua;
-  } 
-
-
 
 .topcard1 {
     display: flex;
@@ -39,30 +7,25 @@
     align-items: center;
     padding-left: 5px;
     width: 100%;
-    height:300PX;
+    height:100%;
 
-    
   }
   .card1 {
       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
       transition: 0.3s;
       border-radius: 5px; 
       background-color: #4985BC;
-      width: 200px;
-      height: 200px;
+      width: 50%;
+      height: 50%;
       border: 2px solid#68E0CF;
       margin-left: 2%;
-      margin-top: 20px;
 
-  
     }
     
     .card1:hover {
       box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     }
   
-
-
     .imgs1{
       padding-left: 5%;
       padding-top: 5%;
@@ -92,9 +55,7 @@
       color: white;
       margin-top: 15%;
   }
-  
-
-    
+   
   .svgs1{
     width:10px;
     height:15px;
@@ -104,15 +65,11 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-top :350%
     }
 
-
-    
-      .line-div{
-        margin-top :20%
-      }
-    
-      
+    .card1 {
+      width:50%;
+      margin-bottom: 5%;
+    }
 
     }

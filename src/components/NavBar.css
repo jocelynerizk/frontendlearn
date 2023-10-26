@@ -7,6 +7,7 @@
     flex-direction: row;
     justify-content:center; 
     align-items: center;
+    margin-left : 15%;
 
   }
   .elearn {
@@ -197,11 +198,15 @@ visibility: hidden;
 @media only screen and (max-width: 600px) {
 
     .header1 {
-        margin-top: 25%;
+        margin-top: 22%;
     }
     .signup {
         margin-left: 0%;
-        margin-top: 10%;
+        margin-top: 30%;
+      }
+      .signin {
+        margin-left: 50%;
+ 
       }
     .head-section-1 {
         display: flex;
@@ -225,7 +230,7 @@ visibility: hidden;
 
 .helo {
        
-margin-top: 70px;
+margin-top: 50px;
 
    position: relative;
     z-index: 1;
@@ -241,6 +246,7 @@ margin-top: 70px;
     visibility: visible;
     opacity: 1;
     padding-left: 1px;
+    
 }
 .nav-btn1{
     visibility: visible;
@@ -248,7 +254,7 @@ margin-top: 70px;
 }
 .header-nav{
        position: fixed;
-    top: 76px;
+    top: 60px;
     left: 0;
     height: 252px;
     width: 172px;
@@ -278,7 +284,6 @@ top: 1px;
 right: 1px;
 }
 .headear-a{
-    
     font-size: 1,5rem;
 }
 

@@ -47,14 +47,7 @@ const coursesData = [
 const Courses = () => {
   return (
     <div>
-         <div className="titre">
-         <h1 className="title">Courses</h1>
-      <div className="line-div">
-        <hr className="line" />
-      </div>
-         </div>
-
-      
+ 
       <div className="topcard">
         {coursesData.map((course, index) => (
           <div className="card" key={index}>

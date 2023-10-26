@@ -16,7 +16,7 @@ const NavBar = () => {
         <FaBars className="Fabars" />
       </button>
       <nav  className="header-nav"ref={navRef}>
-      <a className="header-a"  href="/#About">About </a>
+      <a className="header-a"  href="#about">About </a>
       <a className="header-a"  href="/#Courses">Courses</a>
       <a className="header-a"  href="/#Teachers">Teachers</a>
       <a className="header-a" href="/#TestimonialSection">Testimonials</a>
