@@ -144,6 +144,63 @@
   background-color: #319bf5;
   border-color: #ccc;
 }
+/* Style pour le fond du popup */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 20px 0px rgba(189, 205, 223, 0.3); /* Ombre de boîte bleue */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+/* Style pour le contenu du popup */
+.modal-content {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px rgba(189, 205, 223, 0.3); /* Ombre de boîte bleue */
+  text-align: center;
+  background: linear-gradient(180deg, rgba(91,174,253,1) 0%, rgba(109,120,221,1) 100%);
+
+}
+
+/* Style pour le titre du popup */
+.modal-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white;
+}
+
+/* Style pour le texte du popup */
+.modal-text {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+/* Style pour le bouton de fermeture du popup */
+.modal-close-btn {
+  background: aqua;
+  color: #142877;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* Style au survol du bouton de fermeture du popup */
+.modal-close-btn:hover {
+  background: #142877;
+  color: aqua;
+}
 
 
 @media only screen and (max-width: 600px) {

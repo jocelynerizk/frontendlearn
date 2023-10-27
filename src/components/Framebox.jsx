@@ -1,9 +1,13 @@
+import React, { useState } from 'react';
+import Modal from 'react-modal';
 import { FaBars ,FaTimes,FaRegIdCard } from "react-icons/fa";
 import panaya from "../images/panaya.jpeg";
 import fss from "../images/fss.jpeg";
 import iso9001 from "../images/iso9001.jpeg";
 import cisco from "../images/cisco.jpeg";
 import python from "../images/python.jpeg";
+
+
 const data = [
     {
         id: 1,
@@ -43,25 +47,50 @@ const data = [
   
 ];
 
-const Framebox  = () => {
+const Framebox = () => {
+    const [modalIsOpen, setModalIsOpen] = useState(false);
+    const [selectedItem, setSelectedItem] = useState(null);
+
+    const openModal = (item) => {
+        setSelectedItem(item);
+        setModalIsOpen(true);
+    };
+
+    const closeModal = () => {
+        setSelectedItem(null);
+        setModalIsOpen(false);
+    };
+
     return (
-
-        <div className="frameBoxpp">
-            {data.map(item => (
-                <div key={item.id} className="box">
-                    <img className="cimg" src={item.imageSrc} alt={`Image ${item.id}`} />
-                    <div className="box-content">
-                        <p>{item.text}</p>
-                    
-                        <button className="enroll">{item.buttonText1}</button> 
-                        <button className="enroll">{item.buttonText2}</button>
-                       
-                        
+        <div className="box-content">
+            <div className="frameBoxpp">
+                {data.map((item) => (
+                    <div key={item.id} className="box">
+                        <img className="cimg" src={item.imageSrc} alt={`Image ${item.id}`} />
+                        <div className="box-content">
+                            <p>{item.text}</p>
+                            <div className="enroll">
+                                <button className="enroll">{item.buttonText1}</button>
+                                <button className="enroll" onClick={() => openModal(item)}>
+                                    {item.buttonText2}
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            ))}
+                ))}
+            </div>
+            <Modal isOpen={modalIsOpen} onRequestClose={closeModal} className="modal-overlay">
+                    {selectedItem && (
+                        <div className="modal-content">
+                            <h2 className="modal-title">Vous etes en cours de vous informer sur</h2>
+                            <p className="modal-text">{selectedItem.text}</p>
+                            <button className="modal-close-btn" onClick={closeModal}>
+                                Fermer
+                            </button>
+                        </div>
+                    )}
+                </Modal>
         </div>
-
     );
 };
 
