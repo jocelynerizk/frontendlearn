@@ -1,5 +1,4 @@
-import { FaBars ,FaTimes } from "react-icons/fa";
-import './Framebox.css';
+import { FaBars ,FaTimes,FaRegIdCard } from "react-icons/fa";
 import panaya from "../images/panaya.jpeg";
 import fss from "../images/fss.jpeg";
 import iso9001 from "../images/iso9001.jpeg";
@@ -24,43 +23,45 @@ const data = [
         id: 3,
         imageSrc: iso9001,
         text: 'ISO 9001 est un standard international de gestion de la qualité qui établit les critères pour un système de management de la qualité efficace, ',
-        buttonText1: 'Bouton 3A',
-        buttonText2: 'Bouton 3B'
+        buttonText1: 'Enroll',
+        buttonText2: 'Details'
     },
     {
         id: 4,
         imageSrc: cisco,
         text: ' leader dans le domaine des réseaux informatiques, offrant des solutions et des services innovants pour la communication et la connectivité,',
-        buttonText1: 'Bouton 3A',
-        buttonText2: 'Bouton 3B'
+        buttonText1: 'Enroll',
+        buttonText2: 'Details'
     },
     {
         id: 5,
         imageSrc: python,
         text: 'Python est un langage de programmation polyvalent et convivial',
-        buttonText1: 'Bouton 3A',
-        buttonText2: 'Bouton 3B'
+        buttonText1: 'Enroll',
+        buttonText2: 'Details'
     }
   
 ];
 
 const Framebox  = () => {
     return (
-        <div className="box-content">
+
         <div className="frameBoxpp">
             {data.map(item => (
                 <div key={item.id} className="box">
                     <img className="cimg" src={item.imageSrc} alt={`Image ${item.id}`} />
                     <div className="box-content">
                         <p>{item.text}</p>
-                        <button className="enroll">{item.buttonText1}</button>
+                    
+                        <button className="enroll">{item.buttonText1}</button> 
                         <button className="enroll">{item.buttonText2}</button>
+                       
                         
                     </div>
                 </div>
             ))}
         </div>
-        </div>
+
     );
 };
 

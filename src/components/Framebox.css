@@ -73,7 +73,9 @@
 }
 
 .box-content {
-    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     margin-left: 10px;
 
 }
@@ -106,7 +108,6 @@
 
 .button {
     color: #fff;
-
     display: block;
     margin: 40px auto;
     width: 90%;
@@ -143,12 +144,5 @@
     
     }
 
-    .box-content {
-        flex: 1;
-        margin-left: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    
-    }
+
 }
