@@ -1,13 +1,13 @@
 import React from 'react';
-import NavBar from './components/NavBar.jsx';
-import About from './components/About.jsx';
-import Herosection from './components/Herosection.jsx';
-import Courses from './components/Courses.jsx';
-import Teacher from './components/Teacher.jsx';
-import Footer from './components/Footer.jsx';
-import Contact from './components/Contact.jsx';
-import TestimonialCard from './components/TestimonialCard.jsx';
-import './components/Style.css';
+import NavBar from '../components/NavBar.jsx';
+import About from '../components/About.jsx';
+import Herosection from '../components/Herosection.jsx';
+import Courses1 from '../components/Courses1.jsx';
+import Teacher from '../components/Teacher.jsx';
+import Footer from '../components/Footer.jsx';
+import Contactform from '../components/Contactform.jsx';
+import TestimonialCard from '../components/TestimonialCard.jsx';
+
 
 const App = () => {
   return (
@@ -24,7 +24,7 @@ const App = () => {
           <h1 className="title">Courses</h1>
            <hr className="line" />
        </div>
-      <Courses />
+      <Courses1 />
       <div className="grandtitre">
           <h1 className="title">Instructors</h1>
            <hr className="line" />
@@ -34,7 +34,7 @@ const App = () => {
           <h1 className="title">Contact Us</h1>
            <hr className="line" />
        </div>
-      <Contact />
+      <Contactform />
       <div className="grandtitre">
           <h1 className="title">Testimonials</h1>
            <hr className="line" />

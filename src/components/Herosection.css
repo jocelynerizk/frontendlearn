@@ -1,14 +1,16 @@
 
 .mycaro {
-  width: 180%;
+
   background: no-repeat center center scroll;
   background-size: cover;
  align-items: center;
   position: relative; 
   justify-content: center;
-  padding-top: 40px; /* Ajustez le padding-top en conséquence */
+  padding-top: 10px; /* Ajustez le padding-top en conséquence */
   background-position: center center;
   height: 50%;
+
+
   }
 
 
@@ -19,7 +21,7 @@
 
 
   .monim {
-    width: 50%;
+    width: 100%;
     object-fit: cover; 
     align-items: center;
     height : 350px;
@@ -27,8 +29,6 @@
 
   .slider-button {
     position: absolute;
-    top: 100%;
-    left: 150%;
     transform: translate(-50%, -50%);
   }
 
@@ -39,7 +39,7 @@
 .slick-dots {
   position: absolute;
   bottom: 20px; /* Ajustez la distance par rapport au bas de l'écran selon vos besoins */
-  left: 25%;
+  left: 50%;
   transform: translateX(-50%);
   list-style: none;
   padding: 0;
@@ -53,7 +53,7 @@
 }
 
 .slick-dots li button {
-  font-size: 12px; /* Ajustez la taille de la police des points selon vos besoins */
+  font-size: 16px; /* Ajustez la taille de la police des points selon vos besoins */
   width: 12px; /* Ajustez la taille des points selon vos besoins */
   height: 12px; /* Ajustez la taille des points selon vos besoins */
   border: none;
@@ -64,7 +64,7 @@
 }
 
 .slick-dots li.slick-active button {
-  background-color: #17093a; /* Couleur du point actif */
+  background-color: aqua; /* Couleur du point actif */
 }
 @media only screen and (max-width: 600px) {
   .mycaro {

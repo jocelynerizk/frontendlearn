@@ -62,7 +62,7 @@ const Framebox = () => {
     };
 
     return (
-        <div className="box-content">
+
             <div className="frameBoxpp">
                 {data.map((item) => (
                     <div key={item.id} className="box">
@@ -78,7 +78,7 @@ const Framebox = () => {
                         </div>
                     </div>
                 ))}
-            </div>
+         
             <Modal isOpen={modalIsOpen} onRequestClose={closeModal} className="modal-overlay">
                     {selectedItem && (
                         <div className="modal-content">

@@ -1,67 +1,86 @@
-import React from 'react';
-import './Teacher.css';
-
+import React, { useState } from 'react';
+import Modal from 'react-modal';
+import { FaBars ,FaTimes,FaRegIdCard } from "react-icons/fa";
 import teacher1 from "../images/teacher1.jpeg";
 import teacher2 from "../images/teacher2.jpeg";
 import teacher3 from "../images/teacher3.jpeg";
 import teacher4 from "../images/teacher4.jpeg";
-import svg1 from"../Svgs/linkedin-white.svg"
-import svg2 from"../Svgs/linkedin-white.svg"
-import svg3 from"../Svgs/linkedin-white.svg"
-import svg4 from"../Svgs/linkedin-white.svg"
+const data1 = [
+    {
+        id: 1,
+        imageSrc: teacher1,
+        text: 'BOB',
+        buttonText1: 'Enroll',
+        buttonText2: 'Teacher Contact'
+    },
+    {
+        id: 2,
+        imageSrc: teacher2,
+        text: 'Maria',
+        buttonText1: 'Enroll',
+        buttonText2: 'Teacher Contact'
+    },
+    {
+        id: 3,
+        imageSrc: teacher3,
+        text: 'FADI',
+        buttonText1: 'Enroll',
+        buttonText2: 'Teacher Contact'
+    },
+    {
+        id: 4,
+        imageSrc: teacher4,
+        text: 'ghada',
+        buttonText1: 'Enroll',
+        buttonText2: 'Teacher Contact'
+    },
 
-const coursesData = [
-  {
-    title: 'Teacher1Name',
-    image: teacher1,
-    svge : svg1,
-  },
-  {
-    title: 'Teacher2Name',
-    image: teacher2,
-    svge : svg2,
-  },
-  {
-    title: 'Teacher3Name',
-    image: teacher3,
-    svge : svg3,
-  },
-  {
-    title: 'Teacher4Name',
-    image: teacher4,
-    svge : svg4,
-  },
-  {
-    title: 'Teacher1Name',
-    image: teacher1,
-    svge : svg1,
-  },
+  
 ];
 
 const Teacher = () => {
-  return (
 
-      <div className="topcard1">
-        {coursesData.map((course, index) => (
-          <div className="card1" key={index}>
-            <div className="teachdet">
-            <img src={course.image} alt={course.title} className="imgs1" />
-            </div>
-            <div className="line-div">
-              <hr className="linevert" />
-            </div>
-            <div className="container1">
-            <p clname="dess">{course.title}</p>
-            <img src={course.svge} alt={course.title} className="svgs" />
-            </div>
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [selectedItem, setSelectedItem] = useState(null);
 
-          </div>
+  const openModal = (item) => {
+      setSelectedItem(item);
+      setModalIsOpen(true);
+  };
 
-        ))}
-      </div>
- 
+  const closeModal = () => {
+      setSelectedItem(null);
+      setModalIsOpen(false);
+  };
 
-  );
+    return (
+
+            <div className="topcard">
+                {data1.map((item) => (
+                    <div key={item.id} className="card">
+                    <img  src={item.imageSrc} alt={`Image ${item.id}`} />
+                    
+                     <p>{item.text}</p>
+                        <button  onClick={() => openModal(item)}>
+                          {item.buttonText2}
+                      </button>
+                    </div>
+
+                ))}
+         
+         <Modal isOpen={modalIsOpen} onRequestClose={closeModal} className="modal-overlay">
+                    {selectedItem && (
+                        <div className="modal-content">
+                            <h2 className="modal-title">Vous etes en cours de vous informer sur</h2>
+                            <p className="modal-text">{selectedItem.text}</p>
+                            <button className="modal-close-btn" onClick={closeModal}>
+                                Fermer
+                            </button>
+                        </div>
+                    )}
+                </Modal>
+        </div>
+    );
 };
 
 export default Teacher;

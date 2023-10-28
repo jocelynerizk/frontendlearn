@@ -20,6 +20,8 @@ const HeroSection = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
+    centerMode: true, // Permet aux images de prendre toute la largeur du slider
+
   };
 
   return (
