@@ -31,14 +31,9 @@ const Footer = () => {
         <p className="footer-titles">Information</p>
         <ul className="information-ul">
           <li className="information-li">
-            <a href="#herosection">Home</a>
+            <a href="/Home">Home</a>
           </li>
-          <li className="information-li">
-            <a href="#contact">Contact Us</a>
-          </li>
-          <li className="information-li">
-            <a href="/courses">Courses</a>
-          </li>
+
         </ul>
       </div>
 

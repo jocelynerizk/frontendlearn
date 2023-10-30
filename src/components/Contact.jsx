@@ -14,17 +14,17 @@ const Contact = () => {
     const sendEmail = (e) => {
       e.preventDefault();
   
-      emailjs.sendForm('service_o57z4mm', 'template_ht1z0cl', form.current, 'Lvk1L6c9LoarSAiee')
+      emailjs.sendForm('service_q0vtit5', 'template_427q15q', form.current, 'Rw_8cWcs2_T5iKK2x')
         .then((result) => {
             console.log(result.text);
         }, (error) => {
             console.log(error.text);
         });
     };
-
+    
   return (
 
-  <div className="subc">
+  <div className="subc" id = "contact">
  
   <div className="contactmain">
 
@@ -33,7 +33,7 @@ const Contact = () => {
         type="text"
         className="line-input"
         placeholder="Your Name"
-        span=""      name="from_name" 
+        span=""      name="from_name"  required
 
         style={{ color: "white", fontSize: 18 }}
       />
@@ -42,14 +42,20 @@ const Contact = () => {
         type="text"
         className="line-input"
         placeholder="Your Email"
-        span="" name="user_email" 
+        span="" name="user_email" required
         style={{ color: "#ffffff", fontSize: 18 }}
       />
-
       <input
         type="text"
         className="line-input"
-        placeholder="Your Message"
+        placeholder="Subject" required
+        span="" name="subject"
+        style={{ color: "#ffffff", fontSize: 18 }}
+      />
+      <input
+        type="text"
+        className="line-input"
+        placeholder="Your Message" required
         span="" name="message"
         style={{ color: "#ffffff", fontSize: 18 }}
       />
@@ -74,7 +80,10 @@ const Contact = () => {
         className="gmap_iframe"
         src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=University%20of%20Oxford&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" 
       />
- 
+           <div className="info info1">
+                <img src={call} className="svgs" />
+                <p className="get-in-info"> +961 03 577 105</p>
+              </div>
     </div>
 
     </div>

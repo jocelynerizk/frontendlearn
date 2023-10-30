@@ -1,5 +1,5 @@
 import React from 'react';
-import './TestimonialCard.css';
+
 
 const testimonials = [
   {
@@ -31,7 +31,7 @@ const testimonials = [
 const TestimonialCard = () => {
   return (
 
-    <div className="testimonial-container">
+    <div className="testimonial-container" id = "testimonials"> 
       {testimonials.map((testimonial, index) => (
   <div className={`flip-card ${index === testimonials.length - 1 ? 'last-card' : ''}`} key={testimonial.id}>
     {/* ... contenu de la carte ... 

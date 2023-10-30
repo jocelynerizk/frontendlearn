@@ -5,7 +5,7 @@ import Herosection from '../components/Herosection.jsx';
 import Courses1 from '../components/Courses1.jsx';
 import Teacher from '../components/Teacher.jsx';
 import Footer from '../components/Footer.jsx';
-import Contactform from '../components/Contactform.jsx';
+import Contact from '../components/Contact.jsx';
 import TestimonialCard from '../components/TestimonialCard.jsx';
 
 
@@ -34,7 +34,7 @@ const App = () => {
           <h1 className="title">Contact Us</h1>
            <hr className="line" />
        </div>
-      <Contactform />
+      <Contact />
       <div className="grandtitre">
           <h1 className="title">Testimonials</h1>
            <hr className="line" />

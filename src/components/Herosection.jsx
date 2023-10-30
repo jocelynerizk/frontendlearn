@@ -26,7 +26,7 @@ const HeroSection = () => {
 
   return (
 
-    <div className="mycaro">
+    <div className="mycaro" id = "herosection">
       <Slider {...settings}>
         {images.map((image, index) => (
           <div key={index}>

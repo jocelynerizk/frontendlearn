@@ -18,11 +18,11 @@ const NavBar = () => {
         <FaBars className="Fabars" />
       </button>
       <nav  className="header-nav"ref={navRef}>
-      <a className="header-a"  href="#bout">About </a>
-      <a className="header-a"  href="/Courses">Courses</a>
-      <a className="header-a"  href="#Teachers">Teachers</a>
-      <a className="header-a" href="#TestimonialSection">Testimonials</a>
-      <a className="header-a"  href="#Contactus">Contact Us</a>
+      <a href="#about" className="nav-link">About Us</a>
+        <a href="/Courses" className="nav-link">Courses</a>
+        <a href="#instructors" className="nav-link">Instructors</a>
+        <a href="#contact" className="nav-link">Contact Us</a>
+        <a href="#testimonials" className="nav-link">Testimonials</a>
         <button className="nav-btn nav-close-btn" onClick={showNavBar}>
           <FaTimes />
         </button>

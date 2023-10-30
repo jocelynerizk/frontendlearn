@@ -55,7 +55,7 @@ const Teacher = () => {
 
     return (
 
-            <div className="topcard">
+            <div className="topcard" id = "instructors">
                 {data1.map((item) => (
                     <div key={item.id} className="card">
                     <img  src={item.imageSrc} alt={`Image ${item.id}`} />

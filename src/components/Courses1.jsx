@@ -51,7 +51,7 @@ const Courses1 = () => {
 
     return (
 
-            <div className="topcard">
+            <div className="topcard" id = "coursess">
                 {data.map((item) => (
                     <div key={item.id} className="card">
                     <img  src={item.imageSrc} alt={`Image ${item.id}`} />
