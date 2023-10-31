@@ -603,7 +603,84 @@ PADDING-bottom: 2%;
 
   }
   
+  .container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  
+  .left-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   flex-direction: column;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px 0px rgba(165, 184, 206, 0.3); /* Ombre de boîte bleue */
+  text-align: left;
+  background: #f0f0f0;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  width : 15%;
+  }
 
+  .item {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #46709e; /* Bleu */
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .item:hover {
+    color: #142877;
+    font-size:large;
+    font-weight: bold;
+    background: linear-gradient(180deg, rgba(91,174,253,1) 0%, rgba(109,120,221,1) 100%);
+  }
+  
+  .label {
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .description {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .command-button {
+    background-color: aqua; /* Aqua */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  .command-button:hover{ 
+    color: aqua; /* Aqua */
+    background-color: white;
+
+  }
+  .right-container {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff; /* Blanc */
+    border-radius: 10px;
+    border: 2px solid#68E0CF;
+    box-shadow: linear-gradient(180deg, rgba(91,174,253,1) 0%, rgba(109,120,221,1) 100%);
+
+  }
+  
+
+  
 @media only screen and (max-width: 600px) {
 
   .grandtitre{

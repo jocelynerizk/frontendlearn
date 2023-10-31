@@ -17,8 +17,8 @@ const Mininav = () => {
       </button>
       <nav  className="header-nav"ref={navRef}>
       <a className="header-a"  href="/Home">Home</a>
-      <a className="header-a"  href="/#sign">Sign</a>
-      <a className="header-a"  href="/#Teachers">Board</a>
+      <a className="header-a"  href="/#sign">Sign In</a>
+      <a className="header-a"  href="/Lessons">Board</a>
         <button className="nav-btn nav-close-btn" onClick={showNavBar}>
           <FaTimes />
         </button>

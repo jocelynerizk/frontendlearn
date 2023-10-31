@@ -7,6 +7,7 @@ import Teacher from '../components/Teacher.jsx';
 import Footer from '../components/Footer.jsx';
 import Contact from '../components/Contact.jsx';
 import TestimonialCard from '../components/TestimonialCard.jsx';
+import Lessons  from '../components/Lessons.jsx';
 
 
 const App = () => {
@@ -40,7 +41,6 @@ const App = () => {
            <hr className="line" />
        </div>
        <TestimonialCard />
-
       <Footer />
 
    
