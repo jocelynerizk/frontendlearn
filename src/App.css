@@ -613,7 +613,7 @@ PADDING-bottom: 2%;
   display: flex;
   justify-content: center;
   align-items: center;
-   flex-direction: column;
+   flex-direction:column;
   padding: 10px;
   border-radius: 15px;
   box-shadow: 0px 0px 20px 0px rgba(165, 184, 206, 0.3); /* Ombre de boîte bleue */
@@ -635,7 +635,7 @@ PADDING-bottom: 2%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .item:hover {

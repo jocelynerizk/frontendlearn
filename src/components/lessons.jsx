@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
-
-
+import './Lessons.css'; // Assurez-vous d'avoir votre fichier CSS pour le style
+import verrou from "../images/verrou.jpeg";
+import unver from "../images/unver.png";
 const data = [
-  { id: 1, label: 'Lesson 1', date: '01/10/2023', description: 'Content 1' },
-  { id: 2, label: 'Lesson 2', date: '02/10/2023', description: 'Content 2' },
-  { id: 3, label: 'Lesson 3', date: '03/10/2023', description: 'Content 3' },
-  { id: 4, label: 'Lesson 4', date: '04/10/2023', description: 'Content 4' },
-  { id: 5, label: 'Lesson 5', date: '05/10/2023', description: 'Content 5' }
+  { id: 1, label: 'Lesson 1', date: '01/10/2023',imageSrc: verrou },
+  { id: 2, label: 'Lesson 2', date: '02/10/2023', imageSrc: verrou },
+  { id: 3, label: 'Lesson 3', date: '03/10/2023',imageSrc: verrou },
+  { id: 4, label: 'Lesson 4', date: '04/10/2023', imageSrc: verrou },
+  { id: 5, label: 'Lesson 5', date: '05/10/2023', imageSrc: unver }
 ];
 
 const Lessons = () => {
@@ -18,22 +19,21 @@ const Lessons = () => {
 
   return (
     <div className="container">
-      <div className="left-container">
+
         {data.map(item => (
           <div key={item.id} className="item">
-            <div className="label" onClick={() => handleLabelClick(item.description)}>
+            <div className="label" >
               {item.label}
             </div>
             <div className="date">{item.date}</div>
-            <button className="command-button">Commande</button>
+            <img  className="img1" src={item.imageSrc}></img>
+            <div>
+            <button className="command-button"onClick={() => handleLabelClick(item.description)}>Commande</button>
+            </div>
           </div>
         ))}
-      </div>
-      <div className="right-container">
-        <div className="description">
-          {activeDescription && <p>{activeDescription}</p>}
-        </div>
-      </div>
+
+
     </div>
   );
 };
