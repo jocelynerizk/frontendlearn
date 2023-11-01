@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Lessons.css'; // Assurez-vous d'avoir votre fichier CSS pour le style
+
 import verrou from "../images/verrou.jpeg";
 import unver from "../images/unver.png";
 const data = [

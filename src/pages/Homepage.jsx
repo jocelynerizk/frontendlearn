@@ -7,12 +7,12 @@ import Teacher from '../components/Teacher.jsx';
 import Footer from '../components/Footer.jsx';
 import Contact from '../components/Contact.jsx';
 import TestimonialCard from '../components/TestimonialCard.jsx';
-import Lessons  from '../components/Lessons.jsx';
 
 
-const App = () => {
+
+const Homepage = () => {
   return (
-    <div className="App">
+    <div className="Homepage">
 
       <NavBar />
       <Herosection />
@@ -40,6 +40,7 @@ const App = () => {
           <h1 className="title">Testimonials</h1>
            <hr className="line" />
        </div>
+
        <TestimonialCard />
       <Footer />
 
@@ -49,4 +50,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Homepage;
