@@ -6,7 +6,7 @@ import fss from "../images/fss.jpeg";
 import iso9001 from "../images/iso9001.jpeg";
 import cisco from "../images/cisco.jpeg";
 import python from "../images/python.jpeg";
-
+import { Link } from "react-router-dom";
 
 const data = [
     {
@@ -70,7 +70,9 @@ const Framebox = () => {
                         <div className="box-content">
                             <p>{item.text}</p>
                             <div className="enroll">
-                                <button className="enroll">{item.buttonText1}</button>
+                            <Link to="/Lessons">
+                            <button className="enroll">{item.buttonText1}</button>
+                            </Link>
                                 <button className="enroll" onClick={() => openModal(item)}>
                                     {item.buttonText2}
                                 </button>

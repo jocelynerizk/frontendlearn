@@ -36,11 +36,9 @@ const Single = () => {
             <br />sans nécessiter l'utilisation de modules supplémentaires. Il est accessible aux personnes ayant divers types de déficiences.            
             </p>
             <div className="box">
-                            <p>URL Video:URL VideoURL VideoURL VideoURL Video</p>
-                            <div className="enroll">
+                            <p>URL Video:URL VideoURL VideoURL VideoURL Video</p>               
                              <button>Watch Video</button>
                              <button onClick={togglePopup}>Start Quiz</button>
-        </div>
       </div>
       {showPopup && <div className="popup">{popupContent}</div>}
     </div>

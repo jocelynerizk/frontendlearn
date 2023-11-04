@@ -8,8 +8,6 @@ import Footer from '../components/Footer.jsx';
 import Contact from '../components/Contact.jsx';
 import TestimonialCard from '../components/TestimonialCard.jsx';
 
-
-
 const Homepage = () => {
   return (
     <div className="Homepage">

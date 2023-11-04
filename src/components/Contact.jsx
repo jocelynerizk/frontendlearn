@@ -5,7 +5,7 @@ import call from "../Svgs/call-white.svg";
 import email from "../Svgs/email-white.svg";
 import linkedin from"../Svgs/linkedin-white.svg"
 
-import './Contact.css';
+
 
 
 const Contact = () => {

@@ -29,11 +29,15 @@ const NavBar = () => {
       </nav>
 
    <div className="head-section-1">
-      <div>
+
+      <Link to="/Singin">
       <h3 className="signin">Log In</h3>
-      </div>
+      </Link>
     <div>
-    <button className="signup" onClick={() => window.open('signup.html')}>Sign UP</button>
+    <Link to="/Singin">
+    <button className="signup" >Sign UP</button>
+      </Link>
+
     </div>
     </div>
 

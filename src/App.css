@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300);
 *{
   margin :0%;
   padding: 0%;
@@ -438,7 +439,6 @@ PADDING-bottom: 2%;
 
 /*slider homepage*/
 
-
 .mycaro {
 
   background: no-repeat center center scroll;
@@ -446,8 +446,10 @@ PADDING-bottom: 2%;
  align-items: center;
   position: relative; 
   justify-content: center;
+  padding-top: 10px; /* Ajustez le padding-top en conséquence */
   background-position: center center;
   height: 50%;
+
 
   }
 
@@ -457,15 +459,18 @@ PADDING-bottom: 2%;
     margin-top: 0px;
   }
 
+
   .monim {
     width: 100%;
     object-fit: cover; 
     align-items: center;
     height : 350px;
-    position: relative;
-
   }
 
+  .slider-button {
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
 
   
 
@@ -498,6 +503,9 @@ PADDING-bottom: 2%;
   transition: background-color 0.3s ease;
 }
 
+.slick-dots li.slick-active button {
+  background-color: aqua; /* Couleur du point actif */
+}
 
 .grey {
   color: #369;
@@ -511,56 +519,26 @@ PADDING-bottom: 2%;
   font-weight: bold;
 }
 
-.subc {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-
-}
-
 .contactmain {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #3498db;
+  gap : 5px;
   height: 300px;
   width : 40%;
-  background: #f0f0f0;
-  margin-top: 1%;
-  margin-bottom: 1%;
-  box-shadow: 0px 0px 20px 0px rgba(189, 205, 223, 0.3); /* Ombre de boîte bleue */
 
-
-}
-
-.send1 {
-  color: white;
-  background: #68E0CF;
-  border-radius: 20px;
-  padding: 15px;
-  font-size: 17px;
-  border: 0;
- }
- .line-input {
-  border: none;
-  background: none;
-  outline: none;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  border-bottom: 2px solid#68E0CF;
-  color: rgb(31, 8, 56);
-  font-size: 16px;
 }
 
 .contactmain1 {
   display: flex;
   flex-direction: column;
+  gap: 20px;
   align-items: center;
   justify-content: center;
-  background: #f0f0f0;
+  background-color: #3498db;
+  margin-left: 10%;
   height: 300px;
   width : 90%;
 }
@@ -571,6 +549,39 @@ PADDING-bottom: 2%;
   border: 2px solid#68E0CF;
 
 }
+.line-input {
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  width: 80%;
+  border-bottom: 2px solid#68E0CF;
+  color: white;
+  font-size: 18px;
+}
+.subc {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  margin-left: 10%;
+}
+.nfo info1{
+  display: flex;
+  flex-direction: column;
+}
+
+ .send1 {
+  color: white;
+  background: #68E0CF;
+  border-radius: 20px;
+  padding: 15px;
+  font-size: 17px;
+  border: 0;
+ }
+
+
 
 
 .flip-card.last-card {
@@ -801,7 +812,14 @@ color: white;
   transform: none;
 }
 
+.mycaro {
+  width: 100%;
 
+  }
+  /* Styles for the dots (pagination) */
+.slick-dots {
+left: 40%;
+}
 
 .box {
   display: flex;
@@ -826,19 +844,17 @@ flex-wrap: wrap;
 .enroll {
   padding-right: 10%;
 }
-
 .subc {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   margin-top: 1%;
+
 }
 .contactmain{
   width : 80%;
   margin-bottom: 20%;
-  margin-right: 20%;
-
 }
 
 .testimonial-container {

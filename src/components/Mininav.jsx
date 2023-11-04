@@ -16,9 +16,9 @@ const Mininav = () => {
         <FaBars className="Fabars" />
       </button>
       <nav  className="header-nav"ref={navRef}>
-      <a className="header-a"  href="/Home">Home</a>
-      <a className="header-a"  href="/#sign">Sign In</a>
-      <a className="header-a"  href="/Lessons">Board</a>
+      <a className="header-a"  href="/">Home</a>
+      <a className="header-a"  href="/Singin">Sign In</a>
+      <a className="header-a"  href="/Profile">Board</a>
         <button className="nav-btn nav-close-btn" onClick={showNavBar}>
           <FaTimes />
         </button>
@@ -27,7 +27,9 @@ const Mininav = () => {
    <div className="head-section-1">
 
     <div>
-    <button className="signup" onClick={() => window.open('signup.html')}>Sign UP</button>
+    <Link to="/Singin">
+    <button className="signup" >Sign UP</button>
+      </Link>
     </div>
     </div>
 

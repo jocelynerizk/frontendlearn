@@ -6,7 +6,7 @@ import fss from "../images/fss.jpeg";
 import iso9001 from "../images/iso9001.jpeg";
 import cisco from "../images/cisco.jpeg";
 import python from "../images/python.jpeg";
-
+import { Link } from 'react-router-dom';
 
 const data = [
     {
@@ -54,10 +54,11 @@ const Courses1 = () => {
             <div className="topcard" id = "coursess">
                 {data.map((item) => (
                     <div key={item.id} className="card">
-                    <img  src={item.imageSrc} alt={`Image ${item.id}`} />
-                    
+                    <img  src={item.imageSrc} alt={`Image ${item.id}`} />    
                      <p>{item.text}</p>
-                    <button >{item.buttonText1}</button>
+                     <Link to="/Singin">
+                     <button >{item.buttonText1}</button>
+                    </Link>
                     </div>
 
                 ))}
