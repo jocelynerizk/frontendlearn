@@ -69,7 +69,8 @@ const Framebox = () => {
                         <img className="cimg" src={item.imageSrc} alt={`Image ${item.id}`} />
                         <div className="box-content">
                             <p>{item.text}</p>
-                            <div className="enroll">
+                        </div>
+                        <div className="enroll">
                             <Link to="/Lessons">
                             <button className="enroll">{item.buttonText1}</button>
                             </Link>
@@ -77,8 +78,8 @@ const Framebox = () => {
                                     {item.buttonText2}
                                 </button>
                             </div>
-                        </div>
                     </div>
+                    
                 ))}
          
             <Modal isOpen={modalIsOpen} onRequestClose={closeModal} className="modal-overlay">

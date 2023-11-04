@@ -6,7 +6,7 @@ import Courses from './pages/Courses';
 import ActiveB from './pages/ActiveB.jsx';
 import Singlecourse from './pages/Singlecourse';
 import Lessonsd from './pages/Lessonsd';
-import Signin from './pages/Signin';
+import Signin from './components/Signin.jsx';
 const App = () => {
   return (
     <div className="App">

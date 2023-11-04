@@ -1,15 +1,26 @@
-// ProfileForm.jsx
+
+import { Link } from 'react-router-dom';
 import React from "react";
 
 const ActiveProfile = () => {
   return (
-    <div>
-      <input type="text" placeholder="Input 1" />
-      <input type="text" placeholder="Input 2" />
-      <input type="text" placeholder="Input 3" />
-      <button>Button 1</button>
-      <button>Button 2</button>
-    </div>
+
+     <div className="container">
+             <h1 className="title">Edit Profile</h1>
+           <hr className="line" />
+            <div  className="contata">
+            <input type="text" className="line-input" placeholder="Name" required />
+            <input type="text" className="line-input" placeholder="Phone" required />
+            <input type="text" className="line-input" placeholder="Email" required />
+            
+      <Link to="/Singlecourse">
+      <button className="command-button" >
+      submit
+      </button>
+    </Link>
+            </div>
+
+</div>
   );
 };
 

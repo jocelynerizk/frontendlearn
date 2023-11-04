@@ -31,7 +31,7 @@ const Footer = () => {
         <p className="footer-titles">Information</p>
         <ul className="information-ul">
           <li className="information-li">
-            <a href="/Home">Home</a>
+            <a href="/">Home</a>
           </li>
 
         </ul>

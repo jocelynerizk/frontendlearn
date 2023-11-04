@@ -18,8 +18,8 @@ const Single = () => {
           <label htmlFor={`radio${index}`}>Texte de l'option {index}</label>
         </div>
       ))}
-      <button>Answer</button>
-      <button onClick={closePopup}>go back</button>
+      <button className='command-button'>Answer</button>
+      <button  className='command-button' onClick={closePopup}>Go Back</button>
     </div>
   );
 
@@ -37,9 +37,10 @@ const Single = () => {
             </p>
             <div className="box">
                             <p>URL Video:URL VideoURL VideoURL VideoURL Video</p>               
-                             <button>Watch Video</button>
-                             <button onClick={togglePopup}>Start Quiz</button>
+
       </div>
+      <button className='command-button'>Watch Video</button>
+                             <button className='command-button' onClick={togglePopup}>Start Quiz</button>
       {showPopup && <div className="popup">{popupContent}</div>}
     </div>
     );
