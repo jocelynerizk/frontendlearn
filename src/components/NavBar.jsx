@@ -18,6 +18,7 @@ const NavBar = () => {
         <FaBars className="Fabars" />
       </button>
       <nav  className="header-nav"ref={navRef}>
+      <a href="/" className="nav-link">Home</a>
       <a href="#about" className="nav-link">About Us</a>
         <a href="/Courses" className="nav-link">Courses</a>
         <a href="#instructors" className="nav-link">Instructors</a>

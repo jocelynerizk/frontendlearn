@@ -10,8 +10,7 @@ const images = [
   require('../images/hero5.jpg'),
 
   require('../images/hero1.jpeg'),
-  require('../images/hero2.jpeg'),
-  require('../images/hero3.jpg'),
+
 ];
 
 const HeroSection = () => {

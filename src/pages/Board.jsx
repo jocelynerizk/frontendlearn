@@ -6,7 +6,7 @@ import Profile from '../components/Profile.jsx';
 const Board = () => {
   return (
     <div className="Courses">
-
+      <Mininav />
       <Profile />
       <Footer1 />
     </div>

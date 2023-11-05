@@ -16,7 +16,7 @@ const App = () => {
       <Route path='/Courses' element={<Courses/>}/>
       <Route path='/Lessons' element={<Lessonsd/>}/>
       <Route path='/Singin' element={<Signin  />}/>
-      <Route path='/Profile' element={<ActiveB />}/>
+      <Route path='/Board' element={<ActiveB />}/>
       <Route path='/Singlecourse' element={<Singlecourse/>}/>
     </Routes>
   </BrowserRouter>

@@ -35,20 +35,20 @@
   border-radius: 10px;
   border: 2px solid#68E0CF;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
-  width: 25%;
-  height: 50%;
+  width: 60%;
+  height: 60%;
   align-items: center;
 }
-
-.popup h2 {
+.question {
   background-color: #3498db;
   color: white;
   padding: 10px;
   border-radius: 5px;
   margin-bottom: 20px;
   text-align: center;
-
+  height :20%;
 }
+
 
 .popup-row {
   display: flex;
@@ -67,7 +67,7 @@
 
 }
 .popup-row :hover {
-  background-color: #2980b9;
+  background-color: grey;
   color: aqua; /* Aqua */
 
 }
@@ -75,12 +75,12 @@
 .popup button {
   background-color: #3498db;
   color: white;
-  padding: 10px 10px;
+  padding: 20px 10px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-left: 10%;
+  margin-left: 25%;
   font-size: 22px;
 }
 
@@ -114,6 +114,7 @@
   flex-direction: row;
   justify-content:center; 
   align-items: center;
+
 }
 
 .minihead{
@@ -124,6 +125,7 @@
   align-items: center;
   /*position: fixed !important;*/
   height: 100px;
+
 }
 
 .signup {
@@ -135,7 +137,7 @@
   border-radius: 120px;
   width: 200%;
   height: 40px;
-  margin-left: 50%;
+
 }
 
 .signup:hover {
@@ -152,7 +154,7 @@
 }
 .header-nav a{
   color: white;
-  margin :0 1rem;
+  margin :0 2rem;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
   font-size: large;
@@ -379,7 +381,7 @@
   flex-direction: row;
   justify-content:center; 
   align-items: center;
-  margin-left : 5%;
+left : 5%;
 
 }
 /*menu .*/
@@ -390,7 +392,6 @@
   font-weight: bold;
   font-size: 16px;
   width: 500%;
-  margin-right: 10%;
 
 }
 .signin:hover {

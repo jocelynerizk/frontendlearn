@@ -1,0 +1,79 @@
+import React, { useState } from 'react';
+import Modal from 'react-modal';
+import { FaBars ,FaTimes,FaRegIdCard } from "react-icons/fa";
+import panaya from "../images/panaya.jpeg";
+import fss from "../images/fss.jpeg";
+import iso9001 from "../images/iso9001.jpeg";
+import cisco from "../images/cisco.jpeg";
+import python from "../images/python.jpeg";
+import { Link } from "react-router-dom";
+
+const data = [
+    {
+        id: 1,
+        imageSrc: panaya,
+        text: 'Panaya est une plateforme cloud de gestion du changement et d assurance qualité logicielle',
+        buttonText1: 'Start',
+        buttonText2: 'Drop'
+    },
+    {
+        id: 2,
+        imageSrc: fss,
+        text: 'Le standard de sécurité alimentaire est un ensemble de normes et de pratiques établies pour garantir la qualité, la sécurité et la disponibilité des denrées alimentaires',
+        buttonText1: 'Start',
+        buttonText2: 'Drop'
+    },
+   
+];
+
+const Framebox1 = () => {
+    const [modalIsOpen, setModalIsOpen] = useState(false);
+    const [selectedItem, setSelectedItem] = useState(null);
+
+    const openModal = (item) => {
+        setSelectedItem(item);
+        setModalIsOpen(true);
+    };
+
+    const closeModal = () => {
+        setSelectedItem(null);
+        setModalIsOpen(false);
+    };
+
+    return (
+
+            <div className="frameBoxpp">
+                {data.map((item) => (
+                    <div key={item.id} className="box">
+                        <img className="cimg" src={item.imageSrc} alt={`Image ${item.id}`} />
+                        <div className="box-content">
+                            <p>{item.text}</p>
+                        </div>
+                        <div className="enroll">
+                            <Link to="/Lessons">
+                            <button className="enroll">{item.buttonText1}</button>
+                            </Link>
+                                <button className="enroll" onClick={() => openModal(item)}>
+                                    {item.buttonText2}
+                                </button>
+                            </div>
+                    </div>
+                    
+                ))}
+         
+            <Modal isOpen={modalIsOpen} onRequestClose={closeModal} className="modal-overlay">
+                    {selectedItem && (
+                        <div className="modal-content">
+                            <h2 className="modal-title">Vous etes en cours d' annuler ce cours</h2>
+                            <p className="modal-text">{selectedItem.text}</p>
+                            <button className="modal-close-btn" onClick={closeModal}>
+                                Fermer
+                            </button>
+                        </div>
+                    )}
+                </Modal>
+        </div>
+    );
+};
+
+export default Framebox1;

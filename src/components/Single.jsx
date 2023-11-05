@@ -11,8 +11,11 @@ const Single = () => {
   };
   const popupContent = (
     <div className="popup-content">
-      <h2>Question</h2>
-      {[1, 2, 3, 4, 5].map((index) => (
+        <div className="question">
+        <h2>Question</h2>
+        </div>
+
+      {[1, 2, 3, 4].map((index) => (
         <div key={index} className="popup-row">
           <input type="radio" id={`radio${index}`} name="popup-radio" />
           <label htmlFor={`radio${index}`}>Texte de l'option {index}</label>
