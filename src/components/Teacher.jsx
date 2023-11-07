@@ -47,8 +47,6 @@ const Teacher = () => {
                     <div key={item.id} className="card">
                     <img  src={item.imageSrc} alt={`Image ${item.id}`} onClick={() => window.open(linkedinUrl, '_blank')}></img>
                      <p>{item.text}</p>
-
-
 </div>
       
 

@@ -7,7 +7,7 @@ import iso9001 from "../images/iso9001.jpeg";
 import cisco from "../images/cisco.jpeg";
 import python from "../images/python.jpeg";
 import { Link } from "react-router-dom";
-import juste from "../images/juste.jpeg";
+import juste from "../images/juste1.png";
 const data = [
 
     {
@@ -46,7 +46,7 @@ const Framebox2 = () => {
                         <img className="cimg" src={item.imageSrc} alt={`Image ${item.id}`} />
                         <div className="box-content">
                             <p>{item.text}</p>
-                            <img  className="cimg" src={item.imageSrc1}></img>
+                            <img  className="cimg1" src={item.imageSrc1}></img>
                         </div>
     
                     </div>

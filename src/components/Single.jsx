@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { Link } from 'react-router-dom';
 const Single = () => {
   const [showPopup, setShowPopup] = useState(false);
 
@@ -21,8 +21,9 @@ const Single = () => {
           <label htmlFor={`radio${index}`}>Texte de l'option {index}</label>
         </div>
       ))}
+       <button  className='command-button' onClick={closePopup}>Go Back</button>
       <button className='command-button'>Answer</button>
-      <button  className='command-button' onClick={closePopup}>Go Back</button>
+
     </div>
   );
 
@@ -42,9 +43,15 @@ const Single = () => {
                             <p>URL Video:URL VideoURL VideoURL VideoURL Video</p>               
 
       </div>
-      <button className='command-button'>Watch Video</button>
-                             <button className='command-button' onClick={togglePopup}>Start Quiz</button>
+    <div className="enroll">
+    <Link to="/lessons">
+    <button className='command-button'>Go Back</button>
+    </Link>
+
+      <button className='command-button' onClick={togglePopup}>Start Quiz</button>
       {showPopup && <div className="popup">{popupContent}</div>}
+    </div>
+
     </div>
     );
 };
