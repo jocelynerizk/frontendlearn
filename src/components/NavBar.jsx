@@ -14,7 +14,9 @@ const NavBar = () => {
   return (
 
     <div className="minihead">
-          <img className="mylogo" src={logo}  />
+<div>
+<img className="mylogo" src={logo}  />
+</div>
 
       <button className="nav-btn" onClick={showNavBar}>
         <FaBars className="Fabars" />
@@ -22,7 +24,7 @@ const NavBar = () => {
  
       <nav  className="header-nav"ref={navRef}>
       <a href="/" className="nav-link">Home</a>
-      <a href="#about" className="nav-link">About Us</a>
+ 
         <a href="/Courses" className="nav-link">Courses</a>
         <a href="#instructors" className="nav-link">Instructors</a>
         <a href="#contact" className="nav-link">Contact Us</a>
