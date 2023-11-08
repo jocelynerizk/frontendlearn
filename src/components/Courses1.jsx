@@ -54,7 +54,7 @@ const Courses1 = () => {
             <div className="topcard" id = "coursess">
                 {data.map((item) => (
                     <div key={item.id} className="card">
-                    <img  src={item.imageSrc} alt={`Image ${item.id}`} />    
+                    <img className="myimg"  src={item.imageSrc} alt={`Image ${item.id}`} />    
                      <p>{item.text}</p>
                      <Link to="/Courses">
                      <button >{item.buttonText1}</button>

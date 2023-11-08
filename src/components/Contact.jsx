@@ -61,7 +61,7 @@ const Contact = () => {
       />
       <input type="submit" value="Send message" className="send1" style={{ color: "aliceblue" }}/>
       <div className="info info1">
-                <img src={email} className="svgs" />
+                <img src={email} className="svgs" alt="logo" />
                 <a href="mailto:dev.jocelyne.rizk@isae.edu.lb" className="get-in-info">
                 jocelyne.rizk@isae.edu.lb
                 </a>
@@ -81,7 +81,7 @@ const Contact = () => {
         src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=University%20of%20Oxford&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" 
       />
            <div className="info info1">
-                <img src={call} className="svgs" />
+                <img src={call} className="svgs"  alt="logo" />
                 <p className="get-in-info"> +961 03 577 105</p>
               </div>
     </div>
