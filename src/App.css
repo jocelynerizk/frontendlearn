@@ -294,7 +294,7 @@ margin-right: 0%;
 
 .mylogo{
   width: 150px;
-  height :150px;
+  height :100px;
 }
 .box-content {
   display: flex;
@@ -416,7 +416,7 @@ margin-right: 0%;
   border-radius: 120px;
   width: 150%;
   height: 40px;
-  margin-left: 10%;
+  margin-left: 60%;
 }
 .signup:hover {
   background-color:white;

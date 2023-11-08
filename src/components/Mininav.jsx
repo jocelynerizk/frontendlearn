@@ -1,7 +1,7 @@
 import { useRef} from "react";
 import { Link } from "react-router-dom";
 import { FaBars ,FaTimes ,FaStepForward } from "react-icons/fa";
-import logo from "../images/logo.png";
+import logo1 from "../images/logo1.png";
 
 const Mininav = () => {
   const navRef = useRef();
@@ -11,7 +11,9 @@ const Mininav = () => {
   
   return (
     <div className="minihead">
-       <img className="mylogo" src={logo}  />
+     <div>
+<img className="mylogo" src={logo1}  />
+</div>
       <button className="nav-btn" onClick={showNavBar}>
         <FaBars className="Fabars" />
       </button>

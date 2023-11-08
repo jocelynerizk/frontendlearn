@@ -1,7 +1,7 @@
 import { useRef} from "react";
 import { BrowserRouter,Routes,Route,Link, useNavigate } from 'react-router-dom';
 import { FaBars ,FaTimes } from "react-icons/fa";
-import logo from "../images/logo.png";
+import logo1 from "../images/logo1.png";
 
 const NavBar = () => {
   const navRef = useRef();
@@ -15,7 +15,7 @@ const NavBar = () => {
 
     <div className="minihead">
 <div>
-<img className="mylogo" src={logo}  />
+<img className="mylogo" alt ="logo" src={logo1}  />
 </div>
 
       <button className="nav-btn" onClick={showNavBar}>
