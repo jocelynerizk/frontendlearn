@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './profile.css'; // Assurez-vous d'avoir le fichier App.css dans le même répertoire que ce fichier React
+ // Assurez-vous d'avoir le fichier App.css dans le même répertoire que ce fichier React
 
 const Signin = () => {
   const [activeTab, setActiveTab] = useState('profile');
