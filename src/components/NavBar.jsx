@@ -36,11 +36,11 @@ const NavBar = () => {
 
    <div className="head-section-1">
 
-      <Link to="/Singin">
+      <Link to="/Login">
       <h3 className="signin">Log In</h3>
       </Link>
     <div>
-    <Link to="/Singin">
+    <Link to="/Login">
     <button className="signup" >Sign UP</button>
       </Link>
 
