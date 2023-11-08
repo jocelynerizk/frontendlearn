@@ -28,7 +28,7 @@ function DashboardSingleCourse(props){
       }).then(async(result) => {
         if (result.isConfirmed) {
             try {
-                const deleting = await axios.delete(`http://localhost:5000/courses/deleteCourseById/${courseId}`);
+                const deleting = await axios.delete(`https://elearning-yfp2.onrender.com/courses/deleteCourseById/${courseId}`);
                 if (deleting) {
                   Swal.fire({
                     position: 'top-center',
@@ -79,12 +79,12 @@ function compareDates(date1, date2) {
  const [single,setSingle]=useState();
  useEffect(()=>{
   const fetchData=async()=>{
-    const result= await axios.get(`http://localhost:5000/courses/singleCourseInfo/${courseId}`);
+    const result= await axios.get(`https://elearning-yfp2.onrender.com/courses/singleCourseInfo/${courseId}`);
     if(result)setSingle(result.data.result[0]);
   };
   const getLessons=async()=>{
     try{
-    const lessons=await axios.get(`http://localhost:5000/lessons/getLessonsByCourseId/${courseId}`);
+    const lessons=await axios.get(`https://elearning-yfp2.onrender.com/lessons/getLessonsByCourseId/${courseId}`);
     if(lessons)setLessons(lessons.data.result);
     }catch(error){
       console.log("failed to fetch data");
@@ -124,7 +124,7 @@ function compareDates(date1, date2) {
     }).then(async (result) => {
       if (result.isConfirmed) {
         try {
-          const response = await axios.delete(`http://localhost:5000/lessons/deleteLessonById/${lessonId}`);
+          const response = await axios.delete(`https://elearning-yfp2.onrender.com/lessons/deleteLessonById/${lessonId}`);
           if (response) {
             Swal.fire({
               position: 'top-center',

@@ -38,7 +38,7 @@ function DashboardNewLesson() {
                 course_id: courseId
             }; setError(null);
             try {
-                const response = await axios.post('http://localhost:5000/lessons/add', data, {
+                const response = await axios.post('https://elearning-yfp2.onrender.com/lessons/add', data, {
                     headers: {
                         'Content-Type': 'application/json',
                     }
@@ -53,7 +53,7 @@ function DashboardNewLesson() {
                         correct_answer: correct,
                         lesson_id: response.data.result.insertId
                     }
-                    const addingQuiz = await axios.post('http://localhost:5000/quizzes/add', quizData, {
+                    const addingQuiz = await axios.post('https://elearning-yfp2.onrender.com/quizzes/add', quizData, {
                         headers: {
                             'Content-Type': 'application/json',
                         }
@@ -88,7 +88,7 @@ function DashboardNewLesson() {
     const [single,setSingle]=useState();
     useEffect(()=>{
      const fetchData=async()=>{
-       const result= await axios.get(`http://localhost:5000/courses/singleCourseInfo/${courseId}`);
+       const result= await axios.get(`https://elearning-yfp2.onrender.com/courses/singleCourseInfo/${courseId}`);
        if(result)setSingle(result.data.result[0]);
      };
      

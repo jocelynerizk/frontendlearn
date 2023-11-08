@@ -16,11 +16,11 @@ function DashboardIndex() {
         const fetchData = async () => {
             try {
                 if (user.role === 'admin') {
-                    const response = await axios.get('http://localhost:5000/courses/AllCoursesForIndex');
+                    const response = await axios.get('https://elearning-yfp2.onrender.com/courses/AllCoursesForIndex');
                     if (response) setCourses(response.data.result);
                     else console.log("failed to fetch data");
                 } else {
-                    const response = await axios.get(`http://localhost:5000/courses/AllCoursesForOneTeacher/${user.id}`);
+                    const response = await axios.get(`https://elearning-yfp2.onrender.com/courses/AllCoursesForOneTeacher/${user.id}`);
                     if (response) setCourses(response.data.result);
                     else console.log("failed to fetch data");
                 }

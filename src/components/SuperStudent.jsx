@@ -15,7 +15,7 @@ function DashboardStudents(){
   const deleteStudentByID = async (id) => {
     try {
       const response = await axios.delete(
-        `http://localhost:5000/users/deleteUserById/${id}`
+        `https://elearning-yfp2.onrender.com/users/deleteUserById/${id}`
       );
       if(response){
         Swal.fire({
@@ -44,7 +44,7 @@ function DashboardStudents(){
   useEffect(() => {
     const fetchData = async () => {
       try {
-         const response=await axios.get("http://localhost:5000/users/studentsForSuper")
+         const response=await axios.get("https://elearning-yfp2.onrender.com/users/studentsForSuper")
         if (response) {
           setData(response.data.result);
           console.log(response.data.result);

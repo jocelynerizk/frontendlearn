@@ -26,7 +26,7 @@ const Profile = () => {
     useEffect(() => {
         const getUser = async () => {
             try {
-                const result = await axios.get(`http://localhost:5000/users/getUserById/${user.id}`);
+                const result = await axios.get(`https://elearning-yfp2.onrender.com/users/getUserById/${user.id}`);
                 if (result.data) {
 
                     setData(result.data.result[0][0]);
@@ -67,7 +67,7 @@ const Profile = () => {
                                 phone: phoneRef.current.value,
                                 photo: imageUrl
                             }; console.log(newData);
-                            const updateProfile = await axios.put(`http://localhost:5000/users/updateProfile/${user.id}`, newData, {
+                            const updateProfile = await axios.put(`https://elearning-yfp2.onrender.com/users/updateProfile/${user.id}`, newData, {
                                 headers: {
                                     'Content-Type': 'application/json',
                                 }
@@ -94,7 +94,7 @@ const Profile = () => {
                             phone: phoneRef.current.value,
                             photo: ""
                         }; console.log(newData);
-                        const updateProfile = await axios.put(`http://localhost:5000/users/updateProfile/${user.id}`, newData, {
+                        const updateProfile = await axios.put(`https://elearning-yfp2.onrender.com/users/updateProfile/${user.id}`, newData, {
                             headers: {
                                 'Content-Type': 'application/json',
                             }
@@ -121,7 +121,7 @@ const Profile = () => {
 const checkPassword=async()=>{
     
     try{const d={password:passRef.current.value};
-    const check=await axios.post(`http://localhost:5000/users/checkPassword/${user.id}`,d, {
+    const check=await axios.post(`https://elearning-yfp2.onrender.com/users/checkPassword/${user.id}`,d, {
         headers: {
             'Content-Type': 'application/json',
         }
@@ -156,7 +156,7 @@ const editPassword=async()=>{
             const data={
                 password:npassRef.current.value
             }
-            const updatePassword=await axios.put(`http://localhost:5000/users/updatePassword/${user.id}`,data, {
+            const updatePassword=await axios.put(`https://elearning-yfp2.onrender.com/users/updatePassword/${user.id}`,data, {
                 headers: {
                     'Content-Type': 'application/json',
                 }

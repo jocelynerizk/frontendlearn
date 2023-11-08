@@ -17,7 +17,7 @@ const Courses1 = () => {
             const fetchData = async () => {
                 try {
                     
-                        const response = await axios.get('http://localhost:5000/courses/AllCoursesForIndex');
+                        const response = await axios.get('https://elearning-yfp2.onrender.com/courses/AllCoursesForIndex');
                         if (response) setCourses(response.data.result);
                         else console.log("failed to fetch data");
                     console.log(response.data.result);

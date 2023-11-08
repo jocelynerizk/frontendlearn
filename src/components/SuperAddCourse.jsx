@@ -59,7 +59,7 @@ function SuperAddCourse() {
                     start_date: startDate,
                     end_date: endDate,
                   }; console.log(data.img);
-                  const addCourse = await axios.post("http://localhost:5000/courses/add", data, {
+                  const addCourse = await axios.post("https://elearning-yfp2.onrender.com/courses/add", data, {
                     headers: {
                       'Content-Type': 'application/json',
                     }
@@ -69,7 +69,7 @@ function SuperAddCourse() {
                         teacher_id: teacher,
                         course_id: addCourse.data.result.insertId
                       }
-                      const addToTeachers = await axios.post("http://localhost:5000/teachers/add", teacherData, {
+                      const addToTeachers = await axios.post("https://elearning-yfp2.onrender.com/teachers/add", teacherData, {
                         headers: {
                           'Content-Type': 'application/json',
                         }
@@ -116,7 +116,7 @@ function SuperAddCourse() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/users/getUserByRole/instructor');
+        const response = await axios.get('https://elearning-yfp2.onrender.com/users/getUserByRole/instructor');
         const data = response.data;
         setTeachers(data.result[0]);
       } catch (error) {

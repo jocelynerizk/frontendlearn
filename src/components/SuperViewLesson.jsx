@@ -32,7 +32,7 @@ function DashboardEditLesson() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const result = await axios.get(`http://localhost:5000/lessons/getLessonInfoById/${id}`);
+                const result = await axios.get(`https://elearning-yfp2.onrender.com/lessons/getLessonInfoById/${id}`);
                 if (result) setSingle(result.data.result[0]);
                 setCourseId(result.data.result[0].course_id);
                 setQuizId(result.data.result[0].id)
@@ -122,13 +122,13 @@ function DashboardEditLesson() {
             if (result.isConfirmed) {
 
                 try {
-                    const updateLesson = await axios.put(`http://localhost:5000/lessons/updateLessonById/${id}`, newLesson, {
+                    const updateLesson = await axios.put(`https://elearning-yfp2.onrender.com/lessons/updateLessonById/${id}`, newLesson, {
                         headers: {
                             'Content-Type': 'application/json',
                         }
                     });
                     if (updateLesson) {
-                        const updateQuiz = await axios.put(`http://localhost:5000/quizzes/updateQuizById/${quizId}`, newQuiz, {
+                        const updateQuiz = await axios.put(`https://elearning-yfp2.onrender.com/quizzes/updateQuizById/${quizId}`, newQuiz, {
                             headers: {
                                 'Content-Type': 'application/json',
                             }

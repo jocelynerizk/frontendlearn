@@ -16,7 +16,7 @@ export const useSignUp = () => {
             role
         }
       try {
-        const response = await axios.post('http://localhost:5000/users/registre',data);
+        const response = await axios.post('https://elearning-yfp2.onrender.com/users/registre',data);
         const json= await response.data;
         if (response.status === 200) {
           localStorage.setItem('user', JSON.stringify(json));

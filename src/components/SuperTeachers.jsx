@@ -40,7 +40,7 @@ function DashboardStudents(){
     const deleteTeacherByID = async (id) => {
       try {
         const response = await axios.delete(
-          `http://localhost:5000/users/deleteUserById/${id}`
+          `https://elearning-yfp2.onrender.com/users/deleteUserById/${id}`
         );
         console.log(response.data);
         // Handle success (e.g., show a success message, update state, etc.)
@@ -65,7 +65,7 @@ function DashboardStudents(){
     useEffect(() => {
         const fetchData = async () => {
             try {
-               const response=await axios.get("http://localhost:5000/users/teachersForSuper")
+               const response=await axios.get("https://elearning-yfp2.onrender.com/users/teachersForSuper")
               if (response) {
                 setData(response.data.result);
                 console.log(response.data.result);
