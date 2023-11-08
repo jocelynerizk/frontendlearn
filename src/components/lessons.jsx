@@ -27,7 +27,7 @@ const Lessons = () => {
               {item.label}
             </div>
             <div className="date">{item.date}</div>
-            <img  className="img1" src={item.imageSrc}></img>
+            <img  className="img1" src={item.imageSrc} alt ="logo" ></img>
             <div>
             <Link to="/Singlecourse">
         <button className="command-button" >

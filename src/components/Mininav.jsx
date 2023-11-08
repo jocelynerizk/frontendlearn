@@ -12,7 +12,7 @@ const Mininav = () => {
   return (
     <div className="minihead">
      <div>
-<img className="mylogo" src={logo1}  />
+<img className="mylogo" alt ="logo" src={logo1}  />
 </div>
       <button className="nav-btn" onClick={showNavBar}>
         <FaBars className="Fabars" />

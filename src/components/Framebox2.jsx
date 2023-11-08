@@ -46,7 +46,7 @@ const Framebox2 = () => {
                         <img className="cimg" src={item.imageSrc} alt={`Image ${item.id}`} />
                         <div className="box-content">
                             <p>{item.text}</p>
-                            <img  className="cimg1" src={item.imageSrc1}></img>
+                            <img  className="cimg1" src={item.imageSrc1} alt={`Image ${item.id}`} ></img>
                         </div>
     
                     </div>
